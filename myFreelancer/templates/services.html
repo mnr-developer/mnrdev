@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+{% from 'portfolio.html' import portfoliomodal, portfolioitem %}
+{% from 'team.html' import person %}
+{% block title %}MNR | Web Developer | Freelancer{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    
+    <div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="/">MNR</a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(static/images/01.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
+				   				<div class="slider-text-inner">
+				   					<h2>What I do</h2>
+				   					<h1>My Services</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box intro-heading">
+						<h2>What I do</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-pen3"></i></span>
+							<div class="desc">
+								<h3>Web Design</h3>
+								<p>My in-house, award-winning web and graphic designers recognize the fact that usability, functionality, and visualization are the three important factors of a website's design.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-diamond"></i></span>
+							<div class="desc">
+								<h3>Web Development</h3>
+								<p>Keeping yMy website content up-to-date is critical for success in any digital marketing effort. The ability to update yMy website's content gives yMy team the power to keep marketing and messaging campaigns up to date. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-paperplane"></i></span>
+							<div class="desc">
+								<h3>Web Strategy</h3>
+								<p>My content specialists craft content that matches yMy digital marketing strategy messaging. My content development process ensures consistency, which in turn builds trust with yMy audience.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-params"></i></span>
+							<div class="desc">
+								<h3>Marketing</h3>
+								<p>My team of content development pros has worked on several online content development projects, helping My clients gain better search engine visibility and improved ROI. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-photo"></i></span>
+							<div class="desc">
+								<h3>Digital Marketing</h3>
+								<p>User Experience (UX) and User Interface (UI) design are key to the success of every application, whether it is a website, mobile app, or desktop application. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon"><i class="icon-bulb"></i></span>
+							<div class="desc">
+							<h3>Help &amp; Support</h3>
+								<p>Meet all yMy needs here. 24*7 Support Available.</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-counter" class="colorlib-counters">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box intro-heading">
+						<h2>Fun Facts</h2>
+						<p>Way back when people didn’t realize how huge the internet would be, registering a domain name was free until 1995.When a fee was introduced, it was high! Prices were typically $100 for two years of registration.</p>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+				   			</div>
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="256" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Coffee</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="15" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Done Projects</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="143" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Subscribers</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-testimony" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box intro-heading">
+						<h2>My Client Says:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person1.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> Fantastic work! I am just impressed by their service quality and working strategy. I hired them for the development of my online store and they have satisfied me to the full by delivering the exceptional solution. They have a great expertise, are dedicated, attentive, talented and care much about the client needs. Highly recommended.</p>
+											<span>Adeel Wani, Network Enginer</span>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person2.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> MNR is a highly skilled team with an eye for details. We got exactly what we wanted and more. The project management and communication works really well through the online project tools and the dedicated project manager made a great job keeping things together. We are looking forward to the next collaboration! </p>
+											<span>Harpreet Singh, Web Designer</span>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person3.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> We have been using MNR's service for the last three years and are happy with the quality of service they provide. Social Media management requires a 24/7 ownership and we have been able to get that from team. With the right guidance and support, today we have grown My social presence substantially.</p>
+											<span>Adam Smith, Guest</span>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-hire" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">
+						<h2 class="heading">Are you looking for a web designer?</h2>
+						<p><a href="#" class="btn btn-primary btn-lg">Available for Hire!</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock %}

@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% from 'portfolio.html' import portfoliomodal, portfolioitem %}
+{% from 'team.html' import person %}
+{% block title %}MNR | Web Developer | Freelancer{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    
+    		<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="/">MNR</a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(static/images/02.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
+				   				<div class="slider-text-inner">
+				   					<h2>Know Me</h2>
+				   					<h1>About Me</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row">
+				{%for i in team%}
+					<div class="col-md-5 animate-box">
+						<img class="img-responsive img-about" src="static/images/{{i.image}}" alt="author">
+					</div>
+					
+					<div class="col-md-7 animate-box">
+						<div class="about">
+						
+							<p class="intro">{{i.title1}}</p>
+						
+
+							<p><a href="/worksingle">View My Works</a></p>
+							<p class="colorlib-social-icons">
+								<a href="#"><i class="icon-facebook4"></i></a>
+								<a href="#"><i class="icon-twitter3"></i></a>
+								<a href="#"><i class="icon-googleplus"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+							</p>
+							<span>&mdash; {{i.position}}</span>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p><strong>{{i.title2}}</p>
+							</div>
+							<div class="col-md-6">
+								<p>{{i.title3}}</p>
+							</div>
+						</div>
+					</div>
+					{%endfor%}
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-counter" class="colorlib-counters">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box intro-heading">
+						<h2>Fun Facts</h2>
+						{%for i in team%}
+						<p>{{i.funfact}}s</p>
+						{%endfor%}
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="256" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Coffee</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="15" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Done Projects</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="143" data-speed="5000" data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Subscribers</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-testimony" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box intro-heading">
+						<h2>My Client Says:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person1.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> Fantastic work! I am just impressed by their service quality and working strategy. I hired them for the development of my online store and they have satisfied me to the full by delivering the exceptional solution. They have a great expertise, are dedicated, attentive, talented and care much about the client needs. Highly recommended.</p>
+											<span>Adeel Wani, Network Enginer</span>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person2.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> MNR is a highly skilled team with an eye for details. We got exactly what we wanted and more. The project management and communication works really well through the online project tools and the dedicated project manager made a great job keeping things together. We are looking forward to the next collaboration! </p>
+											<span>Harpreet Singh, Web Designer</span>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide text-center active">
+										<figure>
+											<img src="static/images/person3.jpg" alt="user">
+										</figure>
+										<blockquote>
+											<p><i class="icon-quotes-left"></i> We have been using MNR's service for the last three years and are happy with the quality of service they provide. Social Media management requires a 24/7 ownership and we have been able to get that from team. With the right guidance and support, today we have grown My social presence substantially.</p>
+											<span>Adam Smith, Guest</span>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-hire" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">
+						<h2 class="heading">Are you looking for a web designer?</h2>
+						<p><a href="#" class="btn btn-primary btn-lg">Available for Hire!</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

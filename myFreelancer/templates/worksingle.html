@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% from 'portfolio.html' import portfoliomodal, portfolioitem %}
+{% from 'team.html' import person %}
+{% block title %}MNR | Web Developer | Freelancer{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+    	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="/">MNR</a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url(static/images/cover_img_4.jpg);">
+			   		<div class="overlay"></div>
+			   		<div class="container">
+			   			<div class="row">
+				   			<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center slider-text">
+				   				<div class="slider-text-inner">
+				   					<h2>Done Projects</h2>
+				   					<h1>My Works</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="colorlib-work">
+			<div class="container">
+				<div class="row row-padded-bottom">
+				{%for i in portfolio%}
+					<div class="col-md-7 animate-box" style="padding:10px">
+						<img class="img-responsive" src="static/images/{{i.imageurl}}" alt="work">
+					</div>
+					<div class="col-md-4 col-md-push-1 animate-box">
+						<div class="work-detail">
+							<p class="tag"><span><b>{{i.title}}</b></span>, <span>{{i.subtitle}}</span></p>
+							<p>{{i.description}}</p>
+							<p><a href="{{i.url}}" class="btn btn-primary">View Live Preview</a></p>
+						</div>
+					</div>
+					{%endfor%}
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-hire" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box">
+						<h2 class="heading">Are you looking for a web designer?</h2>
+						<p><a href="#" class="btn btn-primary btn-lg">Available for Hire!</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
