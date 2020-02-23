@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.config.from_object('settings')
 mail = Mail(app)
 
-@app.route("/")
+@app.route("/", methods=['GET','POST'])
 def index():
     return render_template("index.html",
         portfolio=portfolio,team=team
@@ -34,7 +34,7 @@ def services():
 # def cases():
 #     return render_template("blog.html") 
 
-@app.route("/about")
+@app.route("/about", methods=['GET','POST'])
 def about():
     return render_template("about.html",team=team) 
 
@@ -47,7 +47,7 @@ def worksingle():
     return render_template("worksingle.html",portfolio=portfolio)     
        
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET','POST'])
 def contact():
     return render_template("contact.html")  
 
