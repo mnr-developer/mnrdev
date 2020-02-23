@@ -127,4 +127,4 @@ def service_contact():
 #     return render_template("web.html", portfolios=web_portfolio, service_name="web")
 
 if __name__ == "__main__":
-    app.run(port=22834)
+    app.run()
