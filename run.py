@@ -10,7 +10,7 @@ from team import members as team
 from error import error,error1 as error,error1
 import time
 
-env = Environment(loader=PackageLoader('agency', 'templates'))
+env = Environment(loader=PackageLoader('run', 'templates'))
 app = Flask(__name__)
 app.config.from_object('settings')
 mail = Mail(app)
