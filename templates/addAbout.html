@@ -1,0 +1,184 @@
+{% extends "baseLogin.html" %}
+{% block title %}MNR | Web Developer | Freelancer{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="page-title">Add About</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">User Info</div>
+									   <div class="panel-body">
+
+									   
+<form method="post" class="form-horizontal" enctype="multipart/form-data">
+
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Site_Title<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="site_title" class="form-control" required>
+		</div>
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Description<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="desc" class="form-control" required>
+		</div>			
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Address<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="address" class="form-control" required>
+		</div>	
+		<input type="hidden" name="user" value="">
+			<label class="col-sm-2 control-label">ContactNo<span style="color:red">*</span></label>
+			<div class="col-sm-4">
+			<input type="text" name="contact" class="form-control" required>
+			</div>	
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">About Me 1<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="about_1" class="form-control" required>
+		</div>	
+		<input type="hidden" name="user" value="">
+			<label class="col-sm-2 control-label">About Me 2<span style="color:red">*</span></label>
+			<div class="col-sm-4">
+			<input type="text" name="about_2" class="form-control" required>
+			</div>	
+	</div>
+
+<div class="form-group">
+<label class="col-sm-2 control-label">Profile Picture<span style="color:red"></span></label>
+<div class="col-sm-4">
+<input type="file" name="profile_pic" class="form-control">
+</div>
+</div>
+
+<div style="margin-top:30px;margin-left:40%" class="form-group">
+	<div class="col-sm-8 col-sm-offset-2">
+		<button style="width: 100px;" class="btn btn-primary" name="submit" type="submit">Send</button>
+	</div>
+</div>
+
+</form>
+									
+					  
+										</div>
+									</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">Links</div>
+									   <div class="panel-body">
+
+									   
+<form method="post" class="form-horizontal" enctype="multipart/form-data">
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Facebook<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="fb" class="form-control" required>
+		</div>
+	
+		<input type="hidden" name="user" value="">
+			<label class="col-sm-2 control-label">Github<span style="color:red">*</span></label>
+			<div class="col-sm-4">
+			<input type="text" name="git" class="form-control" required>
+			</div>	
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">LinkinId<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="lid" class="form-control" required>
+		</div>
+	
+		<input type="hidden" name="user" value="">
+			<label class="col-sm-2 control-label">twitter<span style="color:red">*</span></label>
+			<div class="col-sm-4">
+			<input type="text" name="tweet" class="form-control" required>
+			</div>	
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Outlook<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="outlook" class="form-control" required>
+		</div>
+	
+		<input type="hidden" name="user" value="">
+			<label class="col-sm-2 control-label">Yahoo<span style="color:red">*</span></label>
+			<div class="col-sm-4">
+			<input type="text" name="yahoo" class="form-control" required>
+			</div>	
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Website1<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="web1" class="form-control" required>
+		</div>
+	
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Website2<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="web2" class="form-control" required>
+		</div>	
+	</div>
+
+<div style="margin-top:30px;margin-left:40%" class="form-group">
+	<div class="col-sm-8 col-sm-offset-2">
+		<button style="width: 100px;" class="btn btn-primary" name="submit" type="submit">Send</button>
+	</div>
+</div>
+
+</form>
+									
+                      
+                                        </div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">Add Fun Fact</div>
+		
+		<div class="panel-body">
+		<form method="post" class="form-horizontal" enctype="multipart/form-data">
+		
+		<div class="form-group">
+		<input type="hidden" name="user" value="">
+		<label class="col-sm-2 control-label">Fact Of the Day<span style="color:red">*</span></label>
+		<div class="col-sm-4">
+		<input type="text" name="title" class="form-control" required>
+		</div>	
+		</div>
+		
+		<div style="margin-top:30px;margin-left:40%" class="form-group">
+			<div class="col-sm-8 col-sm-offset-2">
+				<button style="width: 100px;" class="btn btn-primary" name="submit" type="submit">Send</button>
+			</div>
+		</div>
+		
+		</form>
+										</div>
+									</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			{% endblock %}
